@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+	
+	<servlet>
+		<servlet-name>questioninsert</servlet-name>
+		<servlet-class>com.question.QuestionInsertServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>questioninsert</servlet-name>
+		<url-pattern>/insert</url-pattern>
+	</servlet-mapping>
+ 	
+ 	<servlet>
+ 		<servlet-name>questionedit</servlet-name>
+		<servlet-class>com.question.QuestionReadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>questionedit</servlet-name>
+		<url-pattern>/questioneload</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>questionupdate</servlet-name>
+		<servlet-class>com.question.QuestionUpdateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>questionupdate</servlet-name>
+		<url-pattern>/update</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+		<servlet-name>questionlist</servlet-name>
+		<servlet-class>com.question.QuestionListServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>questionlist</servlet-name>
+		<url-pattern>/questionlist</url-pattern>
+ 	</servlet-mapping>
+ 	
+ 	<servlet>
+		<servlet-name>questiondelete</servlet-name>
+		<servlet-class>com.question.QuestionDeleteServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>questiondelete</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+ 	
+</web-app> 
